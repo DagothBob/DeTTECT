@@ -35,12 +35,16 @@
                                 <file-details :filename="filename" :doc="doc" :platforms="platforms"></file-details>
                             </div>
                         </div>
-                        <div v-if="doc != null" class="row pt-md-2">
-                            <div class="col card-text">
-                                <button type="button" class="btn" @click="downloadYaml('data_sources', 'data_source_name')">
+                        <div v-if="doc != null" class="row">
+                            <div class="col">
+                                <button type="button" class="btn mr-md-3" @click="downloadYaml('data_sources', 'data_source_name')">
                                     <icons icon="save"></icons>
                                     &nbsp;Save YAML file
                                 </button>
+                                <label class="btn"> <!-- TODO: @click="something" -->
+                                    <icons icon="file"></icons>
+                                    &nbsp;Fill from log files
+                                </label>
                             </div>
                         </div>
                     </div>
