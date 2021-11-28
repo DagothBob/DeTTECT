@@ -37,14 +37,17 @@
                         </div>
                         <div v-if="doc != null" class="row">
                             <div class="col">
-                                <button type="button" class="btn mr-md-3" @click="downloadYaml('data_sources', 'data_source_name')">
-                                    <icons icon="save"></icons>
-                                    &nbsp;Save YAML file
-                                </button>
-                                <label class="btn"> <!-- TODO: @click="something" -->
-                                    <icons icon="file"></icons>
-                                    &nbsp;Fill from log files
-                                </label>
+                                <div class="row">
+                                    <button type="button" class="btn mr-md-3" @click="downloadYaml('data_sources', 'data_source_name')">
+                                        <icons icon="save"></icons>
+                                        &nbsp;Save YAML file
+                                    </button>
+                                    <label class="btn ml-mr-0">
+                                        <icons icon="file"></icons>
+                                        &nbsp;Fill from log files
+                                        <input type="file" multiple @change="readLogFiles" style="opacity: 0">
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -351,6 +354,16 @@ export default {
         },
         notifyInvalidFileType(filename) {
             this.notifyDanger('Invalid YAML file type', "The file '" + filename + "' is not a valid data source administration file.");
+        },
+        readLogFiles(event) {
+            // TODO: This
+            let files = event.target.files;
+
+            for (let i = 0; i < files.length; i++) {
+                let file = files.item(i);
+                console.log(file.name);
+                
+            }
         }
     },
     filters: {
