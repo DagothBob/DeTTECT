@@ -45,7 +45,7 @@
                                     <label class="btn ml-mr-0">
                                         <icons icon="file"></icons>
                                         &nbsp;Fill from log files
-                                        <input type="file" multiple @change="readLogFiles" style="opacity: 0">
+                                        <input type="file" multiple accept="text/xml" @change="readLogFiles" style="opacity: 0">
                                     </label>
                                 </div>
                             </div>
@@ -356,14 +356,20 @@ export default {
             this.notifyDanger('Invalid YAML file type', "The file '" + filename + "' is not a valid data source administration file.");
         },
         readLogFiles(event) {
-            // TODO: This
             let files = event.target.files;
+            let promises = [];
+            let text = [];
 
             for (let i = 0; i < files.length; i++) {
-                let file = files.item(i);
-                console.log(file.name);
-                
+                promises.push(files.item(i).text());
             }
+
+            Promise.all(promises).then(texts => {
+                text = texts;
+                console.log(text);
+            });
+
+            // TODO: Call the method to parse xml
         }
     },
     filters: {
