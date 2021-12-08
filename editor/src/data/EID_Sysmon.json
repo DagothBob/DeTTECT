@@ -1,0 +1,2419 @@
+﻿{
+    "EID": [
+        {
+            "Windows_EID": "1100",
+            "Event_description": "The event logging service has shut down",
+            "Subcategory": "Service shutdown"
+        },
+        {
+            "Windows_EID": "1101",
+            "Event_description": "Audit events have been dropped by the transport",
+            "Subcategory": "Event processing"
+        },
+        {
+            "Windows_EID": "1102",
+            "Event_description": "The audit log was cleared",
+            "Subcategory": "Log clear"
+        },
+        {
+            "Windows_EID": "1104",
+            "Event_description": "The security Log is now full",
+            "Subcategory": "Event processing"
+        },
+        {
+            "Windows_EID": "1105",
+            "Event_description": "Event log automatic backup",
+            "Subcategory": " Log automatic backup"
+        },
+        {
+            "Windows_EID": "1108",
+            "Event_description": "The event logging service encountered an error",
+            "Subcategory": "Event processing"
+        },
+        {
+            "Windows_EID": "1200",
+            "Event_description": "Application token success",
+            "Datasource": "Web Credential Creation"
+        },
+        {
+            "Windows_EID": "1202",
+            "Event_description": "Fresh Credential Validation Success",
+            "Datasource": "Web Credential Usage"
+        },
+        {
+            "Windows_EID": "4104",
+            "Event_description": "Execute a Remote Command",
+            "Datasource": "Script Execution"
+        },
+        {
+            "Windows_EID": "4608",
+            "Event_description": "Windows is starting up",
+            "Subcategory": "Security State Change"
+        },
+        {
+            "Windows_EID": "4609",
+            "Event_description": "Windows is shutting down",
+            "Subcategory": "Security State Change"
+        },
+        {
+            "Windows_EID": "4610",
+            "Event_description": "An authentication package has been loaded by the Local Security Authority",
+            "Subcategory": "Security System Extension"
+        },
+        {
+            "Windows_EID": "4611",
+            "Event_description": "A trusted logon process has been registered with the Local Security Authority",
+            "Subcategory": "Security System Extension"
+        },
+        {
+            "Windows_EID": "4612",
+            "Event_description": "Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.",
+            "Subcategory": "System Integrity"
+        },
+        {
+            "Windows_EID": "4614",
+            "Event_description": "A notification package has been loaded by the Security Account Manager.",
+            "Subcategory": "Security System Extension"
+        },
+        {
+            "Windows_EID": "4615",
+            "Event_description": "Invalid use of LPC port",
+            "Subcategory": " System Integrity"
+        },
+        {
+            "Windows_EID": "4616",
+            "Event_description": "The system time was changed.",
+            "Subcategory": "Security State Change"
+        },
+        {
+            "Windows_EID": "4618",
+            "Event_description": "A monitored security event pattern has occurred",
+            "Subcategory": "System Integrity"
+        },
+        {
+            "Windows_EID": "4621",
+            "Event_description": "Administrator recovered system from CrashOnAuditFail",
+            "Subcategory": " Security State Change"
+        },
+        {
+            "Windows_EID": "4622",
+            "Event_description": "A security package has been loaded by the Local Security Authority.",
+            "Subcategory": "Security System Extension"
+        },
+        {
+            "Windows_EID": "4624",
+            "Event_description": "An account was successfully logged on",
+            "Subcategory": "Logon",
+            "Datasource": "Logon Session Creation"
+        },
+        {
+            "Windows_EID": "4625",
+            "Event_description": "An account failed to log on",
+            "Subcategory": "Logon",
+            "Datasource": "User Account Authentication"
+        },
+        {
+            "Windows_EID": "4626",
+            "Event_description": "User/Device claims information",
+            "Subcategory": "Logon"
+        },
+        {
+            "Windows_EID": "4627",
+            "Event_description": "Group membership information.",
+            "Subcategory": "Group Membership"
+        },
+        {
+            "Windows_EID": "4634",
+            "Event_description": "An account was logged off",
+            "Subcategory": "Logoff"
+        },
+        {
+            "Windows_EID": "4646",
+            "Event_description": "IKE DoS-prevention mode started",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4647",
+            "Event_description": "User initiated logoff",
+            "Subcategory": "Logoff"
+        },
+        {
+            "Windows_EID": "4648",
+            "Event_description": "A logon was attempted using explicit credentials",
+            "Subcategory": "Logon"
+        },
+        {
+            "Windows_EID": "4649",
+            "Event_description": "A replay attack was detected",
+            "Subcategory": "Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "4650",
+            "Event_description": "An IPsec Main Mode security association was established",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4651",
+            "Event_description": "An IPsec Main Mode security association was established",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4652",
+            "Event_description": "An IPsec Main Mode negotiation failed",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4653",
+            "Event_description": "An IPsec Main Mode negotiation failed",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4654",
+            "Event_description": "An IPsec Quick Mode negotiation failed",
+            "Subcategory": "IPsec Quick Mode"
+        },
+        {
+            "Windows_EID": "4655",
+            "Event_description": "An IPsec Main Mode security association ended",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4656",
+            "Event_description": "A handle to an object was requested\r\n",
+            "Subcategory": "SAM"
+        },
+        {
+            "Windows_EID": "4656",
+            "Event_description": "A handle to an object was requested\r\n",
+            "Subcategory": "Handle Manipulation"
+        },
+        {
+            "Windows_EID": "4656",
+            "Event_description": "A handle to an object was requested\r\n",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4656",
+            "Event_description": "A handle to an object was requested",
+            "Subcategory": "File System",
+            "Datasource": "Windows Registry Key Access"
+        },
+        {
+            "Windows_EID": "4656",
+            "Event_description": "A handle to an object was requested",
+            "Subcategory": "Registry",
+            "Datasource": "Windows Registry Key Creation"
+        },
+        {
+            "Windows_EID": "4657",
+            "Event_description": "A registry value was modified",
+            "Subcategory": "Registry",
+            "Datasource": "Windows Registry Key Modification"
+        },
+        {
+            "Windows_EID": "4658",
+            "Event_description": "The handle to an object was closed\r\n",
+            "Subcategory": "Registry"
+        },
+        {
+            "Windows_EID": "4658",
+            "Event_description": "The handle to an object was closed\r\n",
+            "Subcategory": "Kernel Object"
+        },
+        {
+            "Windows_EID": "4658",
+            "Event_description": "The handle to an object was closed\r\n",
+            "Subcategory": "SAM"
+        },
+        {
+            "Windows_EID": "4658",
+            "Event_description": "The handle to an object was closed\r\n",
+            "Subcategory": "Handle Manipulation"
+        },
+        {
+            "Windows_EID": "4658",
+            "Event_description": "The handle to an object was closed\r\n",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4658",
+            "Event_description": "The handle to an object was closed",
+            "Subcategory": "File System",
+            "Datasource": "Windows Registry Key Deletion"
+        },
+        {
+            "Windows_EID": "4659",
+            "Event_description": "A handle to an object was requested with intent to delete",
+            "Subcategory": "File System"
+        },
+        {
+            "Windows_EID": "4659",
+            "Event_description": "A handle to an object was requested with intent to delete",
+            "Subcategory": "Registry"
+        },
+        {
+            "Windows_EID": "4659",
+            "Event_description": "A handle to an object was requested with intent to delete",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4660",
+            "Event_description": "An object was deleted",
+            "Subcategory": "File System"
+        },
+        {
+            "Windows_EID": "4660",
+            "Event_description": "An object was deleted",
+            "Subcategory": "Registry"
+        },
+        {
+            "Windows_EID": "4660",
+            "Event_description": "An object was deleted",
+            "Subcategory": "Kernel Object"
+        },
+        {
+            "Windows_EID": "4660",
+            "Event_description": "An object was deleted",
+            "Subcategory": "SAM"
+        },
+        {
+            "Windows_EID": "4660",
+            "Event_description": "An object was deleted",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4661",
+            "Event_description": "A handle to an object was requested\r\n",
+            "Subcategory": "SAM"
+        },
+        {
+            "Windows_EID": "4661",
+            "Event_description": "A handle to an object was requested\r\n",
+            "Subcategory": "Directory Service Access"
+        },
+        {
+            "Windows_EID": "4661",
+            "Event_description": "A handle to an object was requested",
+            "Subcategory": "Kernel Object",
+            "Datasource": "Active Directory Object Access"
+        },
+        {
+            "Windows_EID": "4662",
+            "Event_description": "An operation was performed on an object",
+            "Subcategory": "Directory Service Access"
+        },
+        {
+            "Windows_EID": "4663",
+            "Event_description": "An attempt was made to access an object",
+            "Subcategory": "File System"
+        },
+        {
+            "Windows_EID": "4663",
+            "Event_description": "An attempt was made to access an object\r\n",
+            "Subcategory": "Kernel Object"
+        },
+        {
+            "Windows_EID": "4663",
+            "Event_description": "An attempt was made to access an object\r\n",
+            "Subcategory": "SAM"
+        },
+        {
+            "Windows_EID": "4663",
+            "Event_description": "An attempt was made to access an object\r\n",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4663",
+            "Event_description": "An attempt was made to access an object\r\n",
+            "Subcategory": "Registry",
+            "Datasource": "File Access"
+        },
+        {
+            "Windows_EID": "4664",
+            "Event_description": "An attempt was made to create a hard link",
+            "Subcategory": "File System"
+        },
+        {
+            "Windows_EID": "4665",
+            "Event_description": "An attempt was made to create an application client context.",
+            "Subcategory": "Application Generated"
+        },
+        {
+            "Windows_EID": "4666",
+            "Event_description": "An application attempted an operation",
+            "Subcategory": "Application Generated"
+        },
+        {
+            "Windows_EID": "4667",
+            "Event_description": "An application client context was deleted",
+            "Subcategory": "Application Generated"
+        },
+        {
+            "Windows_EID": "4668",
+            "Event_description": "An application was initialized",
+            "Subcategory": "Application Generated"
+        },
+        {
+            "Windows_EID": "4670",
+            "Event_description": "Permissions on an object were changed\r\n",
+            "Subcategory": "Registry"
+        },
+        {
+            "Windows_EID": "4670",
+            "Event_description": "Permissions on an object were changed\r\n",
+            "Subcategory": " Authorization Policy Change"
+        },
+        {
+            "Windows_EID": "4670",
+            "Event_description": "Permissions on an object were changed",
+            "Subcategory": "File System",
+            "Datasource": "File Modification"
+        },
+        {
+            "Windows_EID": "4671",
+            "Event_description": "An application attempted to access a blocked ordinal through the TBS",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4672",
+            "Event_description": "Special privileges assigned to new logon",
+            "Subcategory": "Special Logon"
+        },
+        {
+            "Windows_EID": "4673",
+            "Event_description": "A privileged service was called",
+            "Subcategory": "Sensitive Privilege Use"
+        },
+        {
+            "Windows_EID": "4674",
+            "Event_description": "An operation was attempted on a privileged object",
+            "Subcategory": "Sensitive Privilege Use"
+        },
+        {
+            "Windows_EID": "4675",
+            "Event_description": "SIDs were filtered",
+            "Subcategory": "Logon"
+        },
+        {
+            "Windows_EID": "4688",
+            "Event_description": "A new process has been created",
+            "Subcategory": "Process Creation",
+            "Datasource": "Process Creation"
+        },
+        {
+            "Windows_EID": "4688",
+            "Event_description": "A new process has been created",
+            "Datasource": "Command Execution"
+        },
+        {
+            "Windows_EID": "4689",
+            "Event_description": "A process has exited",
+            "Subcategory": "Process Termination",
+            "Datasource": "Process Termination"
+        },
+        {
+            "Windows_EID": "4689",
+            "Event_description": "A process has exited",
+            "Datasource": "Scheduled Job Creation"
+        },
+        {
+            "Windows_EID": "4690",
+            "Event_description": "An attempt was made to duplicate a handle to an object",
+            "Subcategory": "Handle Manipulation"
+        },
+        {
+            "Windows_EID": "4691",
+            "Event_description": "Indirect access to an object was requested",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4692",
+            "Event_description": "Backup of data protection master key was attempted",
+            "Subcategory": "DPAPI Activity"
+        },
+        {
+            "Windows_EID": "4693",
+            "Event_description": "Recovery of data protection master key was attempted",
+            "Subcategory": "DPAPI Activity"
+        },
+        {
+            "Windows_EID": "4694",
+            "Event_description": "Protection of auditable protected data was attempted",
+            "Subcategory": "DPAPI Activity"
+        },
+        {
+            "Windows_EID": "4695",
+            "Event_description": "Unprotection of auditable protected data was attempted",
+            "Subcategory": "DPAPI Activity"
+        },
+        {
+            "Windows_EID": "4696",
+            "Event_description": "A primary token was assigned to process",
+            "Subcategory": "Process Creation"
+        },
+        {
+            "Windows_EID": "4697",
+            "Event_description": "A service was installed in the system",
+            "Subcategory": "Security System Extension",
+            "Datasource": "Service Creation"
+        },
+        {
+            "Windows_EID": "4698",
+            "Event_description": "A scheduled task was created",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4699",
+            "Event_description": "A scheduled task was deleted",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4700",
+            "Event_description": "A scheduled task was enabled",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4701",
+            "Event_description": "A scheduled task was disabled",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "4702",
+            "Event_description": "A scheduled task was updated",
+            "Subcategory": "Other Object Access Events",
+            "Datasource": "Scheduled Job Modification"
+        },
+        {
+            "Windows_EID": "4703",
+            "Event_description": "A token right was adjusted",
+            "Subcategory": "Authorization Policy Change"
+        },
+        {
+            "Windows_EID": "4704",
+            "Event_description": "A user right was assigned",
+            "Subcategory": "Authorization Policy Change"
+        },
+        {
+            "Windows_EID": "4705",
+            "Event_description": "A user right was removed",
+            "Subcategory": "Authorization Policy Change"
+        },
+        {
+            "Windows_EID": "4706",
+            "Event_description": "A new trust was created to a domain",
+            "Subcategory": "Authorization Policy Change"
+        },
+        {
+            "Windows_EID": "4707",
+            "Event_description": "A trust to a domain was removed",
+            "Subcategory": "Authorization Policy Change"
+        },
+        {
+            "Windows_EID": "4709",
+            "Event_description": "IPsec Services was started",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "4710",
+            "Event_description": "IPsec Services was disabled",
+            "Subcategory": " Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "4711",
+            "Event_description": "PAStore Engine (1%)",
+            "Subcategory": " Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "4712",
+            "Event_description": "IPsec Services encountered a potentially serious failure",
+            "Subcategory": " Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "4713",
+            "Event_description": "Kerberos policy was changed",
+            "Subcategory": "Authentication Policy Change"
+        },
+        {
+            "Windows_EID": "4714",
+            "Event_description": "Encrypted data recovery policy was changed",
+            "Subcategory": "Authentication Policy Change"
+        },
+        {
+            "Windows_EID": "4715",
+            "Event_description": "The audit policy (SACL) on an object was changed",
+            "Subcategory": " Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4716",
+            "Event_description": "Trusted domain information was modified",
+            "Subcategory": "Authentication Policy Change"
+        },
+        {
+            "Windows_EID": "4717",
+            "Event_description": "System security access was granted to an account",
+            "Subcategory": "Authentication Policy Change"
+        },
+        {
+            "Windows_EID": "4718",
+            "Event_description": "System security access was removed from an account",
+            "Subcategory": "Authentication Policy Change"
+        },
+        {
+            "Windows_EID": "4719",
+            "Event_description": "System audit policy was changed",
+            "Subcategory": " Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4720",
+            "Event_description": "A user account was created",
+            "Subcategory": "User Account Management",
+            "Datasource": "User Account Creation"
+        },
+        {
+            "Windows_EID": "4722",
+            "Event_description": "A user account was enabled",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4723",
+            "Event_description": "An attempt was made to change an account's password",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4724",
+            "Event_description": "An attempt was made to reset an accounts password",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4725",
+            "Event_description": "A user account was disabled",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4726",
+            "Event_description": "A user account was deleted",
+            "Subcategory": "User Account Management",
+            "Datasource": "User Account Deletion"
+        },
+        {
+            "Windows_EID": "4727",
+            "Event_description": "A security-enabled global group was created",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4728",
+            "Event_description": "A member was added to a security-enabled global group",
+            "Subcategory": "Security Group Management",
+            "Datasource": "Group Modification"
+        },
+        {
+            "Windows_EID": "4729",
+            "Event_description": "A member was removed from a security-enabled global group",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4730",
+            "Event_description": "A security-enabled global group was deleted",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4731",
+            "Event_description": "A security-enabled local group was created",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4732",
+            "Event_description": "A member was added to a security-enabled local group",
+            "Subcategory": "Security Group Management",
+            "Datasource": "Group Modification"
+        },
+        {
+            "Windows_EID": "4733",
+            "Event_description": "A member was removed from a security-enabled local group",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4734",
+            "Event_description": "A security-enabled local group was deleted",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4735",
+            "Event_description": "A security-enabled local group was changed",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4737",
+            "Event_description": "A security-enabled global group was changed",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4738",
+            "Event_description": "A user account was changed",
+            "Subcategory": "User Account Management",
+            "Datasource": "User Account Modification"
+        },
+        {
+            "Windows_EID": "4739",
+            "Event_description": "Domain Policy was changed",
+            "Subcategory": "Other Account Management Events"
+        },
+        {
+            "Windows_EID": "4740",
+            "Event_description": "A user account was locked out",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4741",
+            "Event_description": "A computer account was created",
+            "Subcategory": "Computer Account Management"
+        },
+        {
+            "Windows_EID": "4742",
+            "Event_description": "A computer account was changed",
+            "Subcategory": "Computer Account Management"
+        },
+        {
+            "Windows_EID": "4743",
+            "Event_description": "A computer account was deleted",
+            "Subcategory": "Computer Account Management"
+        },
+        {
+            "Windows_EID": "4744",
+            "Event_description": "A security-disabled local group was created",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4745",
+            "Event_description": "A security-disabled local group was changed",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4746",
+            "Event_description": "A member was added to a security-disabled local group",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4747",
+            "Event_description": "A member was removed from a security-disabled local group",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4748",
+            "Event_description": "A security-disabled local group was deleted",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4749",
+            "Event_description": "A security-disabled global group was created",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4750",
+            "Event_description": "A security-disabled global group was changed",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4751",
+            "Event_description": "A member was added to a security-disabled global group",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4752",
+            "Event_description": "A member was removed from a security-disabled global group",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4753",
+            "Event_description": "A security-disabled global group was deleted",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4754",
+            "Event_description": "A security-enabled universal group was created",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4755",
+            "Event_description": "A security-enabled universal group was changed",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4756",
+            "Event_description": "A member was added to a security-enabled universal group",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4757",
+            "Event_description": "A member was removed from a security-enabled universal group",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4758",
+            "Event_description": "A security-enabled universal group was deleted",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4759",
+            "Event_description": "A security-disabled universal group was created",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4760",
+            "Event_description": "A security-disabled universal group was changed",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4761",
+            "Event_description": "A member was added to a security-disabled universal group",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4762",
+            "Event_description": "A member was removed from a security-disabled universal group",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4763",
+            "Event_description": "A security-disabled universal group was deleted",
+            "Subcategory": "Distribution Group Management"
+        },
+        {
+            "Windows_EID": "4764",
+            "Event_description": "A groups type was changed",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4765",
+            "Event_description": "SID History was added to an account",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4766",
+            "Event_description": "An attempt to add SID History to an account failed",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4767",
+            "Event_description": "A user account was unlocked",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4768",
+            "Event_description": "A Kerberos authentication ticket (TGT) was requested",
+            "Subcategory": "Kerberos Authentication Service"
+        },
+        {
+            "Windows_EID": "4769",
+            "Event_description": "A Kerberos service ticket was requested",
+            "Subcategory": "Kerberos Service Ticket Operations",
+            "Datasource": "Active Directory Credential Request"
+        },
+        {
+            "Windows_EID": "4769",
+            "Event_description": "A Kerberos service ticket was requested",
+            "Datasource": "Web Credential Creation"
+        },
+        {
+            "Windows_EID": "4770",
+            "Event_description": "A Kerberos service ticket was renewed",
+            "Subcategory": "Kerberos Service Ticket Operations"
+        },
+        {
+            "Windows_EID": "4771",
+            "Event_description": "Kerberos pre-authentication failed",
+            "Subcategory": "Kerberos Authentication Service"
+        },
+        {
+            "Windows_EID": "4772",
+            "Event_description": "A Kerberos authentication ticket request failed",
+            "Subcategory": "Kerberos Authentication Service"
+        },
+        {
+            "Windows_EID": "4773",
+            "Event_description": "A Kerberos service ticket request failed",
+            "Subcategory": "Kerberos Service Ticket Operations"
+        },
+        {
+            "Windows_EID": "4774",
+            "Event_description": "An account was mapped for logon",
+            "Subcategory": "Credential Validation"
+        },
+        {
+            "Windows_EID": "4775",
+            "Event_description": "An account could not be mapped for logon",
+            "Subcategory": "Credential Validation"
+        },
+        {
+            "Windows_EID": "4776",
+            "Event_description": "The domain controller attempted to validate the credentials for an account",
+            "Subcategory": "Credential Validation"
+        },
+        {
+            "Windows_EID": "4777",
+            "Event_description": "The domain controller failed to validate the credentials for an account",
+            "Subcategory": "Credential Validation"
+        },
+        {
+            "Windows_EID": "4778",
+            "Event_description": "A session was reconnected to a Window Station",
+            "Subcategory": " Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "4779",
+            "Event_description": "A session was disconnected from a Window Station",
+            "Subcategory": " Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "4780",
+            "Event_description": "The ACL was set on accounts which are members of administrators groups",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4781",
+            "Event_description": "The name of an account was changed",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4782",
+            "Event_description": "The password hash an account was accessed",
+            "Subcategory": "Other Account Management Events"
+        },
+        {
+            "Windows_EID": "4783",
+            "Event_description": "A basic application group was created",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4784",
+            "Event_description": "A basic application group was changed",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4785",
+            "Event_description": "A member was added to a basic application group",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4786",
+            "Event_description": "A member was removed from a basic application group",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4787",
+            "Event_description": "A non-member was added to a basic application group",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4788",
+            "Event_description": "A non-member was removed from a basic application group..",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4789",
+            "Event_description": "A basic application group was deleted",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4790",
+            "Event_description": "An LDAP query group was created",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4791",
+            "Event_description": "A basic application group was changed",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4792",
+            "Event_description": "An LDAP query group was deleted",
+            "Subcategory": "Application Group Management"
+        },
+        {
+            "Windows_EID": "4793",
+            "Event_description": "The Password Policy Checking API was called",
+            "Subcategory": "Other Account Management Events"
+        },
+        {
+            "Windows_EID": "4794",
+            "Event_description": "An attempt was made to set the Directory Services Restore Mode administrator password",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4797",
+            "Event_description": "An attempt was made to query the existence of a blank password for an account",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4798",
+            "Event_description": "A user's local group membership was enumerated.",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "4799",
+            "Event_description": "A security-enabled local group membership was enumerated",
+            "Subcategory": "Security Group Management"
+        },
+        {
+            "Windows_EID": "4800",
+            "Event_description": "The workstation was locked",
+            "Subcategory": "Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "4801",
+            "Event_description": "The workstation was unlocked",
+            "Subcategory": "Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "4802",
+            "Event_description": "The screen saver was invoked",
+            "Subcategory": "Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "4803",
+            "Event_description": "The screen saver was dismissed",
+            "Subcategory": "Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "4816",
+            "Event_description": "RPC detected an integrity violation while decrypting an incoming message",
+            "Subcategory": "RPC Events"
+        },
+        {
+            "Windows_EID": "4817",
+            "Event_description": "Auditing settings on object were changed.",
+            "Subcategory": "Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4818",
+            "Event_description": "Proposed Central Access Policy does not grant the same access permissions as the current Central Access Policy",
+            "Subcategory": "Central Policy Staging"
+        },
+        {
+            "Windows_EID": "4819",
+            "Event_description": "Central Access Policies on the machine have been changed",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "4820",
+            "Event_description": "A Kerberos Ticket-granting-ticket (TGT) was denied because the device does not meet the access control restrictions",
+            "Subcategory": "Kerberos Authentication Service"
+        },
+        {
+            "Windows_EID": "4821",
+            "Event_description": "A Kerberos service ticket was denied because the user, device, or both does not meet the access control restrictions",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "4822",
+            "Event_description": "NTLM authentication failed because the account was a member of the Protected User group",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "4823",
+            "Event_description": "NTLM authentication failed because access control restrictions are required",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "4824",
+            "Event_description": "Kerberos preauthentication by using DES or RC4 failed because the account was a member of the Protected User group",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "4825",
+            "Event_description": "A user was denied the access to Remote Desktop. By default, users are allowed to connect only if they are members of the Remote Desktop Users group or Administrators group",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "4826",
+            "Event_description": "Boot Configuration Data loaded",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "4830",
+            "Event_description": "SID History was removed from an account",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "4864",
+            "Event_description": "A namespace collision was detected",
+            "Subcategory": "uncategorized"
+        },
+        {
+            "Windows_EID": "4865",
+            "Event_description": "A trusted forest information entry was added",
+            "Subcategory": "Authentication Policy Change"
+        },
+        {
+            "Windows_EID": "4866",
+            "Event_description": "A trusted forest information entry was removed",
+            "Subcategory": "Authentication Policy Change"
+        },
+        {
+            "Windows_EID": "4867",
+            "Event_description": "A trusted forest information entry was modified",
+            "Subcategory": "Authentication Policy Change"
+        },
+        {
+            "Windows_EID": "4868",
+            "Event_description": "The certificate manager denied a pending certificate request",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4869",
+            "Event_description": "Certificate Services received a resubmitted certificate request",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4870",
+            "Event_description": "Certificate Services revoked a certificate",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4871",
+            "Event_description": "Certificate Services received a request to publish the certificate revocation list (CRL)",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4872",
+            "Event_description": "Certificate Services published the certificate revocation list (CRL)",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4873",
+            "Event_description": "A certificate request extension changed",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4874",
+            "Event_description": "One or more certificate request attributes changed.",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4875",
+            "Event_description": "Certificate Services received a request to shut down",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4876",
+            "Event_description": "Certificate Services backup started",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4877",
+            "Event_description": "Certificate Services backup completed",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4878",
+            "Event_description": "Certificate Services restore started",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4879",
+            "Event_description": "Certificate Services restore completed",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4880",
+            "Event_description": "Certificate Services started",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4881",
+            "Event_description": "Certificate Services stopped",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4882",
+            "Event_description": "The security permissions for Certificate Services changed",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4883",
+            "Event_description": "Certificate Services retrieved an archived key",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4884",
+            "Event_description": "Certificate Services imported a certificate into its database",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4885",
+            "Event_description": "The audit filter for Certificate Services changed",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4886",
+            "Event_description": "Certificate Services received a certificate request",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4887",
+            "Event_description": "Certificate Services approved a certificate request and issued a certificate",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4888",
+            "Event_description": "Certificate Services denied a certificate request",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4889",
+            "Event_description": "Certificate Services set the status of a certificate request to pending",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4890",
+            "Event_description": "The certificate manager settings for Certificate Services changed.",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4891",
+            "Event_description": "A configuration entry changed in Certificate Services",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4892",
+            "Event_description": "A property of Certificate Services changed",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4893",
+            "Event_description": "Certificate Services archived a key",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4894",
+            "Event_description": "Certificate Services imported and archived a key",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4895",
+            "Event_description": "Certificate Services published the CA certificate to Active Directory Domain Services",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4896",
+            "Event_description": "One or more rows have been deleted from the certificate database",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4897",
+            "Event_description": "Role separation enabled",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4898",
+            "Event_description": "Certificate Services loaded a template",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4899",
+            "Event_description": "A Certificate Services template was updated",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4900",
+            "Event_description": "Certificate Services template security was updated",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "4902",
+            "Event_description": "The Per-user audit policy table was created",
+            "Subcategory": "Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4904",
+            "Event_description": "An attempt was made to register a security event source",
+            "Subcategory": "Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4905",
+            "Event_description": "An attempt was made to unregister a security event source",
+            "Subcategory": "Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4906",
+            "Event_description": "The CrashOnAuditFail value has changed",
+            "Subcategory": "Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4907",
+            "Event_description": "Auditing settings on object were changed",
+            "Subcategory": "Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4908",
+            "Event_description": "Special Groups Logon table modified",
+            "Subcategory": "Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4909",
+            "Event_description": "The local policy settings for the TBS were changed",
+            "Subcategory": "uncategorized"
+        },
+        {
+            "Windows_EID": "4910",
+            "Event_description": "The group policy settings for the TBS were changed",
+            "Subcategory": "uncategorized"
+        },
+        {
+            "Windows_EID": "4911",
+            "Event_description": "Resource attributes of the object were changed",
+            "Subcategory": "Authorization Policy Change"
+        },
+        {
+            "Windows_EID": "4912",
+            "Event_description": "Per User Audit Policy was changed",
+            "Subcategory": "Audit Policy Change"
+        },
+        {
+            "Windows_EID": "4913",
+            "Event_description": "Central Access Policy on the object was changed",
+            "Subcategory": "Authorization Policy Change"
+        },
+        {
+            "Windows_EID": "4928",
+            "Event_description": "An Active Directory replica source naming context was established",
+            "Subcategory": "Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4929",
+            "Event_description": "An Active Directory replica source naming context was removed",
+            "Subcategory": "Detailed Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4930",
+            "Event_description": "An Active Directory replica source naming context was modified",
+            "Subcategory": "Detailed Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4931",
+            "Event_description": "An Active Directory replica destination naming context was modified",
+            "Subcategory": "Detailed Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4932",
+            "Event_description": "Synchronization of a replica of an Active Directory naming context has begun",
+            "Subcategory": "Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4933",
+            "Event_description": "Synchronization of a replica of an Active Directory naming context has ended",
+            "Subcategory": "Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4934",
+            "Event_description": "Attributes of an Active Directory object were replicated",
+            "Subcategory": "Detailed Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4935",
+            "Event_description": "Replication failure begins",
+            "Subcategory": "Detailed Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4936",
+            "Event_description": "Replication failure ends",
+            "Subcategory": "Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4937",
+            "Event_description": "A lingering object was removed from a replica",
+            "Subcategory": "Directory Service Replication"
+        },
+        {
+            "Windows_EID": "4944",
+            "Event_description": "The following policy was active when the Windows Firewall started",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4945",
+            "Event_description": "A rule was listed when the Windows Firewall started",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4946",
+            "Event_description": "A change has been made to Windows Firewall exception list. A rule was added",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4947",
+            "Event_description": "A change has been made to Windows Firewall exception list. A rule was modified",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4948",
+            "Event_description": "A change has been made to Windows Firewall exception list. A rule was deleted",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4949",
+            "Event_description": "Windows Firewall settings were restored to the default values",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4950",
+            "Event_description": "A Windows Firewall setting has changed",
+            "Subcategory": "MPSSVC Rule-Level Policy Change",
+            "Datasource": "Firewall Rule Modification"
+        },
+        {
+            "Windows_EID": "4951",
+            "Event_description": "A rule has been ignored because its major version number was not recognized by Windows Firewall",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4952",
+            "Event_description": "Parts of a rule have been ignored because its minor version number was not recognized by Windows Firewall",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4953",
+            "Event_description": "A rule has been ignored by Windows Firewall because it could not parse the rule",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "4954",
+            "Event_description": "Windows Firewall Group Policy settings has changed. The new settings have been applied",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4956",
+            "Event_description": "Windows Firewall has changed the active profile",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4957",
+            "Event_description": "Windows Firewall did not apply the following rule",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4958",
+            "Event_description": "Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer",
+            "Subcategory": "MPSSVC Rule-Level Policy Change"
+        },
+        {
+            "Windows_EID": "4960",
+            "Event_description": "IPsec dropped an inbound packet that failed an integrity check",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "4961",
+            "Event_description": "IPsec dropped an inbound packet that failed a replay check",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "4962",
+            "Event_description": "IPsec dropped an inbound packet that failed a replay check",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "4963",
+            "Event_description": "IPsec dropped an inbound clear text packet that should have been secured",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "4964",
+            "Event_description": "Special groups have been assigned to a new logon",
+            "Subcategory": "Special Logon"
+        },
+        {
+            "Windows_EID": "4965",
+            "Event_description": "IPsec received a packet from a remote computer with an incorrect Security Parameter Index (SPI).",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "4976",
+            "Event_description": "During Main Mode negotiation, IPsec received an invalid negotiation packet.",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4977",
+            "Event_description": "During Quick Mode negotiation, IPsec received an invalid negotiation packet.",
+            "Subcategory": " IPsec Quick Mode"
+        },
+        {
+            "Windows_EID": "4978",
+            "Event_description": "During Extended Mode negotiation, IPsec received an invalid negotiation packet.",
+            "Subcategory": "IPsec Extended Mode"
+        },
+        {
+            "Windows_EID": "4979",
+            "Event_description": "IPsec Main Mode and Extended Mode security associations were established.",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4980",
+            "Event_description": "IPsec Main Mode and Extended Mode security associations were established",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4981",
+            "Event_description": "IPsec Main Mode and Extended Mode security associations were established",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4982",
+            "Event_description": "IPsec Main Mode and Extended Mode security associations were established",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4983",
+            "Event_description": "An IPsec Extended Mode negotiation failed",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4984",
+            "Event_description": "An IPsec Extended Mode negotiation failed",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "4985",
+            "Event_description": "The state of a transaction has changed",
+            "Subcategory": "File System"
+        },
+        {
+            "Windows_EID": "5024",
+            "Event_description": "The Windows Firewall Service has started successfully",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5025",
+            "Event_description": "The Windows Firewall Service has been stopped",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5027",
+            "Event_description": "The Windows Firewall Service was unable to retrieve the security policy from the local storage",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5028",
+            "Event_description": "The Windows Firewall Service was unable to parse the new security policy.",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5029",
+            "Event_description": "The Windows Firewall Service failed to initialize the driver",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5030",
+            "Event_description": "The Windows Firewall Service failed to start",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5031",
+            "Event_description": "The Windows Firewall Service blocked an application from accepting incoming connections on the network.",
+            "Subcategory": "Filtering Platform Packet Drop"
+        },
+        {
+            "Windows_EID": "5032",
+            "Event_description": "Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5033",
+            "Event_description": "The Windows Firewall Driver has started successfully",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5034",
+            "Event_description": "The Windows Firewall Driver has been stopped",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5035",
+            "Event_description": "The Windows Firewall Driver failed to start",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5037",
+            "Event_description": "The Windows Firewall Driver detected critical runtime error. Terminating",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5038",
+            "Event_description": "Code integrity determined that the image hash of a file is not valid",
+            "Subcategory": "System Integrity"
+        },
+        {
+            "Windows_EID": "5039",
+            "Event_description": "A registry key was virtualized.",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5040",
+            "Event_description": "A change has been made to IPsec settings. An Authentication Set was added.",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5041",
+            "Event_description": "A change has been made to IPsec settings. An Authentication Set was modified",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5042",
+            "Event_description": "A change has been made to IPsec settings. An Authentication Set was deleted",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5043",
+            "Event_description": "A change has been made to IPsec settings. A Connection Security Rule was added",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5044",
+            "Event_description": "A change has been made to IPsec settings. A Connection Security Rule was modified",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5045",
+            "Event_description": "A change has been made to IPsec settings. A Connection Security Rule was deleted",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5046",
+            "Event_description": "A change has been made to IPsec settings. A Crypto Set was added",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5047",
+            "Event_description": "A change has been made to IPsec settings. A Crypto Set was modified",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5048",
+            "Event_description": "A change has been made to IPsec settings. A Crypto Set was deleted",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5049",
+            "Event_description": "An IPsec Security Association was deleted",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5050",
+            "Event_description": "An attempt to programmatically disable the Windows Firewall using a call to INetFwProfile.FirewallEnabled(FALSE",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5051",
+            "Event_description": "A file was virtualized",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5056",
+            "Event_description": "A cryptographic self test was performed",
+            "Subcategory": "System Integrity"
+        },
+        {
+            "Windows_EID": "5057",
+            "Event_description": "A cryptographic primitive operation failed",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5058",
+            "Event_description": "Key file operation",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5059",
+            "Event_description": "Key migration operation",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5060",
+            "Event_description": "Verification operation failed",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5061",
+            "Event_description": "Cryptographic operation",
+            "Subcategory": "System Integrity"
+        },
+        {
+            "Windows_EID": "5062",
+            "Event_description": "A kernel-mode cryptographic self test was performed",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5063",
+            "Event_description": "A cryptographic provider operation was attempted",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "5064",
+            "Event_description": "A cryptographic context operation was attempted",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "5065",
+            "Event_description": "A cryptographic context modification was attempted",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "5066",
+            "Event_description": "A cryptographic function operation was attempted",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "5067",
+            "Event_description": "A cryptographic function modification was attempted",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "5068",
+            "Event_description": "A cryptographic function provider operation was attempted",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "5069",
+            "Event_description": "A cryptographic function property operation was attempted",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "5070",
+            "Event_description": "A cryptographic function property operation was attempted",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "5071",
+            "Event_description": "Key access denied by Microsoft key distribution service",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5120",
+            "Event_description": "OCSP Responder Service Started",
+            "Subcategory": "Certification Services"
+        },
+        {
+            "Windows_EID": "5121",
+            "Event_description": "OCSP Responder Service Stopped",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5122",
+            "Event_description": "A Configuration entry changed in the OCSP Responder Service",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5123",
+            "Event_description": "A configuration entry changed in the OCSP Responder Service",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5124",
+            "Event_description": "A security setting was updated on OCSP Responder Service",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5125",
+            "Event_description": "A request was submitted to OCSP Responder Service",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5126",
+            "Event_description": "Signing Certificate was automatically updated by the OCSP Responder Service",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5127",
+            "Event_description": "The OCSP Revocation Provider successfully updated the revocation information",
+            "Subcategory": "Uncategorized"
+        },
+        {
+            "Windows_EID": "5136",
+            "Event_description": "A directory service object was modified",
+            "Subcategory": "Directory Service Changes",
+            "Datasource": "Active Directory Object Modification"
+        },
+        {
+            "Windows_EID": "5137",
+            "Event_description": "A directory service object was created",
+            "Subcategory": "Directory Service Changes",
+            "Datasource": "Active Directory Object Creation"
+        },
+        {
+            "Windows_EID": "5138",
+            "Event_description": "A directory service object was undeleted",
+            "Subcategory": "Directory Service Changes"
+        },
+        {
+            "Windows_EID": "5139",
+            "Event_description": "A directory service object was moved",
+            "Subcategory": "Directory Service Changes"
+        },
+        {
+            "Windows_EID": "5140",
+            "Event_description": "A network share object was accessed",
+            "Subcategory": "File Share",
+            "Datasource": "Network Share Access"
+        },
+        {
+            "Windows_EID": "5141",
+            "Event_description": "A directory service object was deleted",
+            "Subcategory": "Directory Service Changes",
+            "Datasource": "Active Directory Object Deletion"
+        },
+        {
+            "Windows_EID": "5142",
+            "Event_description": "A network share object was added.",
+            "Subcategory": "File Share"
+        },
+        {
+            "Windows_EID": "5143",
+            "Event_description": "A network share object was modified",
+            "Subcategory": "File Share"
+        },
+        {
+            "Windows_EID": "5144",
+            "Event_description": "A network share object was deleted.",
+            "Subcategory": "File Share"
+        },
+        {
+            "Windows_EID": "5145",
+            "Event_description": "A network share object was checked to see whether client can be granted desired access",
+            "Subcategory": "Detailed File Share",
+            "Datasource": "Network Share Access"
+        },
+        {
+            "Windows_EID": "5146",
+            "Event_description": "The Windows Filtering Platform has blocked a packet",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5147",
+            "Event_description": "A more restrictive Windows Filtering Platform filter has blocked a packet",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5148",
+            "Event_description": "The Windows Filtering Platform has detected a DoS attack and entered a defensive mode; packets associated with this attack will be discarded.",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "5149",
+            "Event_description": "The DoS attack has subsided and normal processing is being resumed.",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "5150",
+            "Event_description": "The Windows Filtering Platform has blocked a packet.",
+            "Subcategory": "Filtering Platform Connection"
+        },
+        {
+            "Windows_EID": "5151",
+            "Event_description": "A more restrictive Windows Filtering Platform filter has blocked a packet.",
+            "Subcategory": "Filtering Platform Connection"
+        },
+        {
+            "Windows_EID": "5152",
+            "Event_description": "The Windows Filtering Platform blocked a packet",
+            "Subcategory": "Filtering Platform Packet Drop"
+        },
+        {
+            "Windows_EID": "5153",
+            "Event_description": "A more restrictive Windows Filtering Platform filter has blocked a packet",
+            "Subcategory": "Filtering Platform Packet Drop"
+        },
+        {
+            "Windows_EID": "5154",
+            "Event_description": "The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections",
+            "Subcategory": "Filtering Platform Connection"
+        },
+        {
+            "Windows_EID": "5155",
+            "Event_description": "The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections",
+            "Subcategory": "Filtering Platform Connection"
+        },
+        {
+            "Windows_EID": "5156",
+            "Event_description": "The Windows Filtering Platform has allowed a connection",
+            "Subcategory": "Filtering Platform Connection",
+            "Datasource": "Network Connection Creation"
+        },
+        {
+            "Windows_EID": "5157",
+            "Event_description": "The Windows Filtering Platform has blocked a connection",
+            "Subcategory": "Filtering Platform Connection"
+        },
+        {
+            "Windows_EID": "5158",
+            "Event_description": "The Windows Filtering Platform has permitted a bind to a local port",
+            "Subcategory": "Filtering Platform Connection"
+        },
+        {
+            "Windows_EID": "5159",
+            "Event_description": "The Windows Filtering Platform has blocked a bind to a local port",
+            "Subcategory": "Filtering Platform Connection"
+        },
+        {
+            "Windows_EID": "5163",
+            "Event_description": "Microsoft-Windows-WAS",
+            "Datasource": "Active Directory Object Modification"
+        },
+        {
+            "Windows_EID": "5168",
+            "Event_description": "Spn check for SMB/SMB2 fails.",
+            "Subcategory": "File Share"
+        },
+        {
+            "Windows_EID": "5169",
+            "Event_description": "A directory service object was modified",
+            "Subcategory": "Directory Service Changes"
+        },
+        {
+            "Windows_EID": "5170",
+            "Event_description": "A directory service object was modified during a background cleanup task",
+            "Subcategory": "Directory Service Changes"
+        },
+        {
+            "Windows_EID": "5376",
+            "Event_description": "Credential Manager credentials were backed up",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "5377",
+            "Event_description": "Credential Manager credentials were restored from a backup",
+            "Subcategory": "User Account Management"
+        },
+        {
+            "Windows_EID": "5378",
+            "Event_description": "The requested credentials delegation was disallowed by policy",
+            "Subcategory": "Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "5379",
+            "Event_description": "Credential Manager credentials were read",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5380",
+            "Event_description": "Vault Find Credential",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5381",
+            "Event_description": "Vault credentials were read",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5382",
+            "Event_description": "Vault credentials were read",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "5440",
+            "Event_description": "The following callout was present when the Windows Filtering Platform Base Filtering Engine started",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5441",
+            "Event_description": "The following filter was present when the Windows Filtering Platform Base Filtering Engine started",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5442",
+            "Event_description": "The following provider was present when the Windows Filtering Platform Base Filtering Engine started",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5443",
+            "Event_description": "The following provider context was present when the Windows Filtering Platform Base Filtering Engine started",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5444",
+            "Event_description": "The following sub-layer was present when the Windows Filtering Platform Base Filtering Engine started",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5446",
+            "Event_description": "A Windows Filtering Platform callout has been changed",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5447",
+            "Event_description": "A Windows Filtering Platform filter has been changed",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "5448",
+            "Event_description": "A Windows Filtering Platform provider has been changed",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5449",
+            "Event_description": "A Windows Filtering Platform provider context has been changed",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5450",
+            "Event_description": "A Windows Filtering Platform sub-layer has been changed",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5451",
+            "Event_description": "An IPsec Quick Mode security association was established",
+            "Subcategory": "IPsec Quick Mode"
+        },
+        {
+            "Windows_EID": "5452",
+            "Event_description": "An IPsec Quick Mode security association ended",
+            "Subcategory": "IPsec Quick Mode"
+        },
+        {
+            "Windows_EID": "5453",
+            "Event_description": "An IPsec negotiation with a remote computer failed because the IKE and AuthIP IPsec Keying Modules (IKEEXT) service is not started",
+            "Subcategory": "IPsec Main Mode"
+        },
+        {
+            "Windows_EID": "5456",
+            "Event_description": "PAStore Engine applied Active Directory storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5457",
+            "Event_description": "PAStore Engine failed to apply Active Directory storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5458",
+            "Event_description": "PAStore Engine applied locally cached copy of Active Directory storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5459",
+            "Event_description": "PAStore Engine failed to apply locally cached copy of Active Directory storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5460",
+            "Event_description": "PAStore Engine applied local registry storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5461",
+            "Event_description": "PAStore Engine failed to apply local registry storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5462",
+            "Event_description": "PAStore Engine failed to apply some rules of the active IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5463",
+            "Event_description": "PAStore Engine polled for changes to the active IPsec policy and detected no changes",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5464",
+            "Event_description": "PAStore Engine polled for changes to the active IPsec policy, detected changes, and applied them to IPsec Services",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5465",
+            "Event_description": "PAStore Engine received a control for forced reloading of IPsec policy and processed the control successfully",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5466",
+            "Event_description": "PAStore Engine polled for changes to the Active Directory IPsec policy, determined that Active Directory cannot be reached, and will use the cached copy of the Active Directory IPsec policy instead",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5467",
+            "Event_description": "PAStore Engine polled for changes to the Active Directory IPsec policy, determined that Active Directory can be reached, and found no changes to the policy",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5468",
+            "Event_description": "PAStore Engine polled for changes to the Active Directory IPsec policy, determined that Active Directory can be reached, found changes to the policy, and applied those changes",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5471",
+            "Event_description": "PAStore Engine loaded local storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5472",
+            "Event_description": "PAStore Engine failed to load local storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5473",
+            "Event_description": "PAStore Engine loaded directory storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5474",
+            "Event_description": "PAStore Engine failed to load directory storage IPsec policy on the computer",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5477",
+            "Event_description": "PAStore Engine failed to add quick mode filter",
+            "Subcategory": "Filtering Platform Policy Change"
+        },
+        {
+            "Windows_EID": "5478",
+            "Event_description": "IPsec Services has started successfully",
+            "Subcategory": "IPsec Driver"
+        },
+        {
+            "Windows_EID": "5479",
+            "Event_description": "IPsec Services has been shut down successfully",
+            "Subcategory": "IPsec Driver"
+        },
+        {
+            "Windows_EID": "5480",
+            "Event_description": "IPsec Services failed to get the complete list of network interfaces on the computer",
+            "Subcategory": "IPsec Driver"
+        },
+        {
+            "Windows_EID": "5483",
+            "Event_description": "IPsec Services failed to initialize RPC server. IPsec Services could not be started",
+            "Subcategory": "IPsec Driver"
+        },
+        {
+            "Windows_EID": "5484",
+            "Event_description": "IPsec Services has experienced a critical failure and has been shut down",
+            "Subcategory": "IPsec Driver"
+        },
+        {
+            "Windows_EID": "5485",
+            "Event_description": "IPsec Services failed to process some IPsec filters on a plug-and-play event for network interfaces",
+            "Subcategory": "IPsec Driver"
+        },
+        {
+            "Windows_EID": "5632",
+            "Event_description": "A request was made to authenticate to a wireless network",
+            "Subcategory": "Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "5633",
+            "Event_description": "A request was made to authenticate to a wired network",
+            "Subcategory": "Other Logon/Logoff Events"
+        },
+        {
+            "Windows_EID": "5712",
+            "Event_description": "A Remote Procedure Call (RPC) was attempted",
+            "Subcategory": "RPC Events"
+        },
+        {
+            "Windows_EID": "5888",
+            "Event_description": "An object in the COM+ Catalog was modified",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "5889",
+            "Event_description": "An object was deleted from the COM+ Catalog",
+            "Subcategory": "Other Object Access Events"
+        },
+        {
+            "Windows_EID": "5890",
+            "Event_description": "An object was added to the COM+ Catalog",
+            "Subcategory": "System Integrity"
+        },
+        {
+            "Windows_EID": "6144",
+            "Event_description": "Security policy in the group policy objects has been applied successfully",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "6145",
+            "Event_description": "One or more errors occured while processing security policy in the group policy objects",
+            "Subcategory": "Other Policy Change Events"
+        },
+        {
+            "Windows_EID": "6272",
+            "Event_description": "Network Policy Server granted access to a user",
+            "Subcategory": "Network Policy Server"
+        },
+        {
+            "Windows_EID": "6273",
+            "Event_description": "Network Policy Server denied access to a user",
+            "Subcategory": "Network Policy Server"
+        },
+        {
+            "Windows_EID": "6274",
+            "Event_description": "Network Policy Server discarded the request for a user",
+            "Subcategory": "Network Policy Server"
+        },
+        {
+            "Windows_EID": "6275",
+            "Event_description": "Network Policy Server discarded the accounting request for a user",
+            "Subcategory": "Network Policy Server"
+        },
+        {
+            "Windows_EID": "6276",
+            "Event_description": "Network Policy Server quarantined a user",
+            "Subcategory": "Network Policy Server"
+        },
+        {
+            "Windows_EID": "6277",
+            "Event_description": "Network Policy Server granted access to a user but put it on probation because the host did not meet the defined health policy",
+            "Subcategory": "Network Policy Server"
+        },
+        {
+            "Windows_EID": "6278",
+            "Event_description": "Network Policy Server granted full access to a user because the host met the defined health policy",
+            "Subcategory": "Network Policy Server"
+        },
+        {
+            "Windows_EID": "6279",
+            "Event_description": "Network Policy Server locked the user account due to repeated failed authentication attempts",
+            "Subcategory": "Network Policy Server"
+        },
+        {
+            "Windows_EID": "6280",
+            "Event_description": "Network Policy Server unlocked the user account",
+            "Subcategory": "Network Policy Server"
+        },
+        {
+            "Windows_EID": "6281",
+            "Event_description": "Code Integrity determined that the page hashes of an image file are not valid...",
+            "Subcategory": "System Integrity"
+        },
+        {
+            "Windows_EID": "6400",
+            "Event_description": "BranchCache: Received an incorrectly formatted response while discovering availability of content.",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6401",
+            "Event_description": "BranchCache: Received invalid data from a peer. Data discarded.",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6402",
+            "Event_description": "BranchCache: The message to the hosted cache offering it data is incorrectly formatted.",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6403",
+            "Event_description": "BranchCache: The hosted cache sent an incorrectly formatted response to the client's message to offer it data.",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6404",
+            "Event_description": "BranchCache: Hosted cache could not be authenticated using the provisioned SSL certificate.",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6405",
+            "Event_description": "BranchCache: %2 instance(s) of event id %1 occurred.",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6406",
+            "Event_description": "%1 registered to Windows Firewall to control filtering for the following:",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6407",
+            "Event_description": "1%",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6408",
+            "Event_description": "Registered product %1 failed and Windows Firewall is now controlling the filtering for %2.",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6409",
+            "Event_description": "BranchCache: A service connection point object could not be parsed",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6410",
+            "Event_description": "Code integrity determined that a file does not meet the security requirements to load into a process. This could be due to the use of shared sections or other issues",
+            "Subcategory": "System Integrity"
+        },
+        {
+            "Windows_EID": "6416",
+            "Event_description": "A new external device was recognized by the system.",
+            "Subcategory": "Plug and Play"
+        },
+        {
+            "Windows_EID": "6417",
+            "Event_description": "The FIPS mode crypto selftests succeeded",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6418",
+            "Event_description": "The FIPS mode crypto selftests failed",
+            "Subcategory": "Other System Events"
+        },
+        {
+            "Windows_EID": "6419",
+            "Event_description": "A request was made to disable a device",
+            "Subcategory": "Plug and Play"
+        },
+        {
+            "Windows_EID": "6420",
+            "Event_description": "A device was disabled",
+            "Subcategory": "Plug and Play"
+        },
+        {
+            "Windows_EID": "6421",
+            "Event_description": "A request was made to enable a device",
+            "Subcategory": "Plug and Play"
+        },
+        {
+            "Windows_EID": "6422",
+            "Event_description": "A device was enabled",
+            "Subcategory": "Plug and Play"
+        },
+        {
+            "Windows_EID": "6423",
+            "Event_description": "The installation of this device is forbidden by system policy",
+            "Subcategory": "Plug and Play"
+        },
+        {
+            "Windows_EID": "6424",
+            "Event_description": "The installation of this device was allowed, after having previously been forbidden by policy",
+            "Subcategory": "Plug and Play"
+        },
+        {
+            "Windows_EID": "7040",
+            "Event_description": "Service Control Manager",
+            "Datasource": "Service Modification"
+        },
+        {
+            "Windows_EID": "8191",
+            "Event_description": "Highest System-Defined Audit Message Value",
+            "Subcategory": "Other System Events"
+        }
+    ],
+    "sysmon": [
+        {
+            "Sysmon ID": "1",
+            "Description": "Process creation",
+            "Datasource": "Process Creation"
+        },
+        {
+            "Sysmon ID": "2",
+            "Description": "A process changed a file creation time",
+            "Datasource": "File Modification"
+        },
+        {
+            "Sysmon ID": "3",
+            "Description": "Network connection",
+            "Datasource": "Network Connection Creation"
+        },
+        {
+            "Sysmon ID": "4",
+            "Description": "Sysmon service state changed"
+        },
+        {
+            "Sysmon ID": "5",
+            "Description": "Process terminated",
+            "Datasource": "Process Termination"
+        },
+        {
+            "Sysmon ID": "6",
+            "Description": "Driver loaded",
+            "Datasource": "Driver Load"
+        },
+        {
+            "Sysmon ID": "7",
+            "Description": "Image loaded",
+            "Datasource": "Module Load"
+        },
+        {
+            "Sysmon ID": "8",
+            "Description": "CreateRemoteThread",
+            "Datasource": "Process Modification"
+        },
+        {
+            "Sysmon ID": "9",
+            "Description": "RawAccessRead"
+        },
+        {
+            "Sysmon ID": "10",
+            "Description": "ProcessAccess",
+            "Datasource": "Process Access"
+        },
+        {
+            "Sysmon ID": "11",
+            "Description": "FileCreate",
+            "Datasource": "File Creation"
+        },
+        {
+            "Sysmon ID": "12",
+            "Description": "RegistryEvent (Object create and delete)",
+            "Datasource": "Windows Registry Key Creation"
+        },
+        {
+            "Sysmon ID": "12",
+            "Datasource": "Windows Registry Key Deletion"
+        },
+        {
+            "Sysmon ID": "13",
+            "Description": "RegistryEvent (Value Set)",
+            "Datasource": "Windows Registry Key Modification"
+        },
+        {
+            "Sysmon ID": "14",
+            "Description": "RegistryEvent (Key and Value Rename)",
+            "Datasource": "Windows Registry Key Modification"
+        },
+        {
+            "Sysmon ID": "15",
+            "Description": "FileCreateStreamHash"
+        },
+        {
+            "Sysmon ID": "16",
+            "Description": "Sysmon config state changed",
+            "Datasource": "Named Pipe Metadata"
+        },
+        {
+            "Sysmon ID": "17",
+            "Description": "Pipe created",
+            "Datasource": "Named Pipe Metadata"
+        },
+        {
+            "Sysmon ID": "18",
+            "Description": "Pipe connected"
+        },
+        {
+            "Sysmon ID": "19",
+            "Description": "WmiEventFilter activity detected",
+            "Datasource": "WMI Creation"
+        },
+        {
+            "Sysmon ID": "20",
+            "Description": "WmiEventConsumer activity detected",
+            "Datasource": "WMI Creation"
+        },
+        {
+            "Sysmon ID": "21",
+            "Description": "WmiEventConsumerToFilter activity detected",
+            "Datasource": "WMI Creation"
+        },
+        {
+            "Sysmon ID": "22",
+            "Description": "DNSEvent"
+        },
+        {
+            "Sysmon ID": "23",
+            "Description": "FileDelete",
+            "Datasource": "File Deletion"
+        },
+        {
+            "Sysmon ID": "24",
+            "Description": "ClipboardChange"
+        },
+        {
+            "Sysmon ID": "225",
+            "Description": "Error"
+        }
+    ]
+}
