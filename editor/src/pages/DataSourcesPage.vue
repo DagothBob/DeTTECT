@@ -366,10 +366,38 @@ export default {
 
             Promise.all(promises).then(texts => {
                 text = texts;
-                console.log(text);
+                this.readXML(text);
             });
+        },
+        readXML(XML_logs) {
+            let MainEID=[];
 
-            // TODO: Call the method to parse xml
+            for (let i=0; i<XML_logs.length; i++){
+                let EID_list = [];
+                let parser = new DOMParser();
+                let xmlDoc = parser.parseFromString(XML_logs[i],"text/xml");
+
+                //counting the number of event ids in xml
+                let count = (XML_logs[i].match(/<EventID>/g)).length;
+
+                for (let j=0; j<count; j++){
+                    let EID = xmlDoc.getElementsByTagName("EventID")[j].childNodes[0].nodeValue; 
+                    EID_list.push(EID);
+                }
+
+                MainEID.push(EID_list);  
+            }
+            console.log(MainEID);
+        },
+        fillDocument(mappings) {
+            mappings.forEach(doc => {
+                doc.forEach(source => {
+                    let obj = YAML_OBJ_DATA_SOURCES;
+                    obj.data_source_name = source;
+
+                    this.doc.data_sources.push(obj);
+                });
+            });
         }
     },
     filters: {
