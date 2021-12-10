@@ -359,87 +359,74 @@ export default {
         readLogFiles(event) {
             let files = event.target.files;
             let promises = [];
-            let text = [];
+            let XML_logs = [];
 
             for (let i = 0; i < files.length; i++) {
                 promises.push(files.item(i).text());
             }
 
             Promise.all(promises).then(texts => {
-                text = texts;
-                this.readXML(text);
-            });
-        },
-        readXML(XML_logs) {
-            let MainEID=[];
+                XML_logs = texts;
+        
+                let mainEID = [];
 
-            for (let i=0; i<XML_logs.length; i++){
-                let EID_list = [];
-                let parser = new DOMParser();
-                let xmlDoc = parser.parseFromString(XML_logs[i],"text/xml");
+                XML_logs.forEach(log => {
+                    let EID_list = [];
+                    let parser = new DOMParser();
+                    let xmlDoc = parser.parseFromString(log, "text/xml");
 
-                //counting the number of event ids in xml
-                let count = (XML_logs[i].match(/<EventID>/g)).length;
-
-                for (let j=0; j<count; j++){
-                    let EID = xmlDoc.getElementsByTagName("EventID")[j].childNodes[0].nodeValue; 
-                    EID_list.push(EID);
-                }
-
-                MainEID.push(EID_list);  
-            }
-
-            this.mapSources(MainEID);
-        },
-        mapSources(IDs) {
-            const mappings = new Map();
-
-            for (const [key, value] of new Map(Object.entries(mappingJSON))) {
-                value.forEach(mapping => {
-                    if (mapping["Datasource"] !== undefined) { // Has a known datasource
-                        let map = mappings.get(mapping["Datasource"]) === undefined ?
-                                  {"IDs": [], "Products": []} :
-                                  mappings.get(mapping["Datasource"]);
-                        
-                        map["Products"].push(key);
-                        mappings.set(mapping["Datasource"], map);
-
-                        IDs.forEach(log => {
-                            log.forEach(eventid => {
-                                if (eventid == mapping["ID"]) {
-                                    let map = mappings.get(mapping["Datasource"]);
-                                    map["IDs"].push(eventid);
-                                    mappings.set(mapping["Datasource"], map);
-                                }
-                            });
-                        });
+                    for (let eid_node of xmlDoc.getElementsByTagName("EventID")) {
+                        EID_list.push(eid_node.childNodes[0].nodeValue)
                     }
-                });
-            }
 
-            this.fillDocument(mappings);
-        },
-        fillDocument(mappings) {
-            console.log(mappings);
-            for (const [key, value] of mappings) {
-                if (value["IDs"].length > 0) {
-                    this.addItem('data_sources', key, {
-                        data_source_name: key,
-                        date_registered: null,
-                        date_connected: null,
-                        products: value["Products"],
-                        available_for_data_analytics: false,
-                        comment: 'Generated from log files.',
-                        data_quality: {
-                            device_completeness: 0,
-                            data_field_completeness: 0,
-                            timeliness: 0,
-                            consistency: 0,
-                            retention: 0
+                    mainEID.push(EID_list);  
+                });
+
+                const mappings = new Map();
+
+                for (const [key, value] of new Map(Object.entries(mappingJSON))) {
+                    value.forEach(mapping => {
+                        if (mapping["Datasource"] !== undefined) { // Has a known datasource
+                            let map = mappings.get(mapping["Datasource"]) === undefined ?
+                                      {"IDs": [], "Products": []} :
+                                      mappings.get(mapping["Datasource"]);
+                            
+                            map["Products"].push(key);
+                            mappings.set(mapping["Datasource"], map);
+
+                            mainEID.forEach(log => {
+                                log.forEach(eventid => {
+                                    if (eventid == mapping["ID"]) {
+                                        let map = mappings.get(mapping["Datasource"]);
+                                        map["IDs"].push(eventid);
+                                        mappings.set(mapping["Datasource"], map);
+                                    }
+                                });
+                            });
                         }
-                    })
+                    });
                 }
-            }
+
+                for (const [key, value] of mappings) {
+                    if (value["IDs"].length > 0) {
+                        this.addItem('data_sources', key, {
+                            data_source_name: key,
+                            date_registered: null,
+                            date_connected: null,
+                            products: value["Products"],
+                            available_for_data_analytics: false,
+                            comment: 'Generated from log files.',
+                            data_quality: {
+                                device_completeness: 0,
+                                data_field_completeness: 0,
+                                timeliness: 0,
+                                consistency: 0,
+                                retention: 0
+                            }
+                        })
+                    }
+                }
+            });
         }
     },
     filters: {
