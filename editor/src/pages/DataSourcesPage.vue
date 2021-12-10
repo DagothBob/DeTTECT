@@ -130,6 +130,7 @@ import Icons from '@/components/Icons';
 import jsyaml from 'js-yaml';
 import moment from 'moment';
 import constants from '@/constants';
+import mappingJSON from '@/data/EID_Datasource';
 import { pageMixin } from '../mixins/PageMixins.js';
 import { navigateMixins } from '../mixins/NavigateMixins.js';
 import { notificationMixin } from '../mixins/NotificationMixins.js';
@@ -388,6 +389,32 @@ export default {
                 MainEID.push(EID_list);  
             }
             console.log(MainEID);
+            this.mapSources(MainEID);
+        },
+        mapSources(IDs) {
+            const mappings = new Map();
+            console.log("mappingJSON: ", mappingJSON);
+
+            mappingJSON["EID"].forEach(mapping => {                
+                if (mapping["Datasource"] !== undefined) { // Has a known datasource
+                    mappings.set(mapping["Datasource"], {
+                        "IDs": [],
+                        "Product": "Event Viewer"
+                    });
+
+                    IDs.forEach(log => {
+                        log.forEach(eventid => {
+                            if (eventid == mapping["EID"]) {
+                                let map = mappings.get(mapping["Datasource"]);
+                                map["IDs"].push(eventid);
+                                mappings.set(mapping["Datasource"], map);
+                            }
+                        });
+                    });
+                }
+            });
+
+            console.log("mappings: ", mappings);
         },
         fillDocument(mappings) {
             mappings.forEach(doc => {
