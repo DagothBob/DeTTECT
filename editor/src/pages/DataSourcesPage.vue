@@ -388,43 +388,58 @@ export default {
 
                 MainEID.push(EID_list);  
             }
-            console.log(MainEID);
+
             this.mapSources(MainEID);
         },
         mapSources(IDs) {
             const mappings = new Map();
-            console.log("mappingJSON: ", mappingJSON);
 
-            mappingJSON["EID"].forEach(mapping => {                
-                if (mapping["Datasource"] !== undefined) { // Has a known datasource
-                    mappings.set(mapping["Datasource"], {
-                        "IDs": [],
-                        "Product": "Event Viewer"
-                    });
+            for (const [key, value] of new Map(Object.entries(mappingJSON))) {
+                value.forEach(mapping => {
+                    if (mapping["Datasource"] !== undefined) { // Has a known datasource
+                        let map = mappings.get(mapping["Datasource"]) === undefined ?
+                                  {"IDs": [], "Products": []} :
+                                  mappings.get(mapping["Datasource"]);
+                        
+                        map["Products"].push(key);
+                        mappings.set(mapping["Datasource"], map);
 
-                    IDs.forEach(log => {
-                        log.forEach(eventid => {
-                            if (eventid == mapping["EID"]) {
-                                let map = mappings.get(mapping["Datasource"]);
-                                map["IDs"].push(eventid);
-                                mappings.set(mapping["Datasource"], map);
-                            }
+                        IDs.forEach(log => {
+                            log.forEach(eventid => {
+                                if (eventid == mapping["ID"]) {
+                                    let map = mappings.get(mapping["Datasource"]);
+                                    map["IDs"].push(eventid);
+                                    mappings.set(mapping["Datasource"], map);
+                                }
+                            });
                         });
-                    });
-                }
-            });
+                    }
+                });
+            }
 
-            console.log("mappings: ", mappings);
+            this.fillDocument(mappings);
         },
         fillDocument(mappings) {
-            mappings.forEach(doc => {
-                doc.forEach(source => {
-                    let obj = YAML_OBJ_DATA_SOURCES;
-                    obj.data_source_name = source;
-
-                    this.doc.data_sources.push(obj);
-                });
-            });
+            console.log(mappings);
+            for (const [key, value] of mappings) {
+                if (value["IDs"].length > 0) {
+                    this.addItem('data_sources', key, {
+                        data_source_name: key,
+                        date_registered: null,
+                        date_connected: null,
+                        products: value["Products"],
+                        available_for_data_analytics: false,
+                        comment: 'Generated from log files.',
+                        data_quality: {
+                            device_completeness: 0,
+                            data_field_completeness: 0,
+                            timeliness: 0,
+                            consistency: 0,
+                            retention: 0
+                        }
+                    })
+                }
+            }
         }
     },
     filters: {
